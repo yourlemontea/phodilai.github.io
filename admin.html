@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "YOUR-ONESIGNAL-APP-ID",
+      safari_web_id: "YOUR-SAFARI-ID-IF-NEEDED",
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Quản Trị</title>
@@ -131,4 +144,5 @@
     
     <script type="module" src="script-admin.js"></script>
 </body>
+
 </html>
